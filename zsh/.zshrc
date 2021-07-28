@@ -49,7 +49,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -159,6 +159,8 @@ alias brightnessctl='sudo brightnessctl'
 alias hotp='htop'
 alias py='python'
 alias k='kubectl'
+alias gc='gcloud'
+alias gs='gsutil'
 
 # Bind keys:
 bindkey "^[[H" beginning-of-line # home
@@ -186,3 +188,7 @@ if [ -f '/home/qkation/deleteIt/google-cloud-sdk/path.zsh.inc' ]; then . '/home/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/qkation/deleteIt/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/qkation/deleteIt/google-cloud-sdk/completion.zsh.inc'; fi
+[[ /usr/bin/kubectl ]] && source <(kubectl completion zsh)
+
+export LANG=en_US.UTF-8
+
