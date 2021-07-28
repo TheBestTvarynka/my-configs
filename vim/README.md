@@ -1,4 +1,4 @@
-# Here is some screenshots of my VIM configuration
+# Here are some screenshots of my VIM configuration
 
 ![](screenshots/1.png)
 
