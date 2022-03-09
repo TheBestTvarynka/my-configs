@@ -89,15 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -153,14 +145,22 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo
 
 alias ls='exa -a -F --color=always --group-directories-first'
-alias ll='exa -l -a -F --color=always --group-directories-first --git'
+alias ll='exa -l -a -F --color=always --group-directories-first --git --icons'
 alias la='exa -a -a -F --color=always --group-directories-first'
+# alias ls='lsd -F -l'
+# alias la='lsd -a -F -l'
+# alias ll='lsd -F -l -a'
 alias brightnessctl='sudo brightnessctl'
 alias hotp='htop'
 alias py='python'
 alias k='kubectl'
 alias gc='gcloud'
 alias gs='gsutil'
+alias h='history 0'
+alias cat='lolcat'
+alias v='vim'
+alias b='bat'
+alias bp='bat --style=plain'
 
 # Bind keys:
 bindkey "^[[H" beginning-of-line # home
@@ -178,7 +178,9 @@ bindkey '^W' my-backward-delete-word
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
-setopt appendhistory # Append history to the history file (no overwriting)
+
+# Append history to the history file (no overwriting)
+# setopt appendhistory
 # setopt sharehistory #Share history across terminals
 # setopt incappendhistory # Immediately append to the history file, not just when a term is kill
 
@@ -192,3 +194,6 @@ if [ -f '/home/qkation/deleteIt/google-cloud-sdk/completion.zsh.inc' ]; then . '
 
 export LANG=en_US.UTF-8
 
+# setxkbmap -layout us,ua -option grp:caps_toggle
+#
+source /usr/share/nvm/init-nvm.sh
