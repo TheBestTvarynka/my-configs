@@ -197,3 +197,6 @@ export LANG=en_US.UTF-8
 # setxkbmap -layout us,ua -option grp:caps_toggle
 #
 source /usr/share/nvm/init-nvm.sh
+
+# https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init zsh)"
