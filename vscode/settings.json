@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Eva Dark",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "JetBrains Mono",
+    "workbench.tree.indent": 20,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "workbench.editor.enablePreview": false,
+    "editor.fontLigatures": false,
+    "window.restoreWindows": "none",
+    "extensions.ignoreRecommendations": true
+}
